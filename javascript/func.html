@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+.style1 { 
+    display:none 
+}
+</style>
+<script language="JavaScript">
+function function1() {
+    item1.style.display="";
+    item2.style.display="none";
+    item3.style.display="none";
+    }
+function function2() {
+    item1.style.display="none";
+    item2.style.display="";
+    item3.style.display="none";
+    }
+function function3() {
+    item1.style.display="none";
+    item2.style.display="none";
+    item3.style.display="";
+    } 
+function function5() {
+    item1.style.display="";
+    item2.style.display="";
+    item3.style.display="";
+    }
+function function6() {
+    item1_1.style.visibility="visible";
+    item2_1.style.visibility="visible";
+    item3_1.style.visibility="visible";
+    }
+</script>
+</head>
+<body>
+<table cellspacing=5 cellpadding=5 border=2>
+    <tr>
+       <th>header 1</th>
+       <th>header 2</th>
+       <th>Header 3</th>
+    </tr>   
+    <tr id="item1">
+       <td>Cars</td>
+       <td id="item1_1">item 1</td>
+       <td>item 2</td>
+    </tr>
+    <tr id="item2">
+       <td>item 3</td>
+       <td id="item2_1">item 4</td>
+       <td>High</td>
+    </tr>
+    <tr id="item3">
+       <td>item 5</td>
+       <td id="item3_1">item 6</td>
+       <td>Slow</td>
+    </tr>
+</table>
+<p>
+<input type=button style="width:175" onclick="function1()" value="Show some ">
+<input type=button style="width:175" onclick="function2()" value="Show some other">
+<input type=button style="width:175" onclick="function3()" value="Show some other else">
+<input type=button style="width:175" onclick="function6();function5()" value="Reset">
+<ul>
+    <li onclick="className='style1'">Item 1 ? Double-click me</li>
+    <li onclick="className='style1'">Item 2</li>
+    <li onclick="className='style1'">Item 3</li>
+    <li onclick="className='style1'">Item 4</li>
+    <li onclick="className='style1'">Item 5</li>
+</ul>
+</body>
+</html>
